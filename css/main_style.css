@@ -1,0 +1,18 @@
+/*
+Colorblind safe color palette from colorbrewer2.org
+#ca0020 - Red
+#f4a582 - Peach
+#f7f7f7 - White
+#92c5de - Light Blue
+#0571b0 - Blue
+*/
+
+body {
+  background-color: #92c5de;
+  color: #0571b0;
+  text-align: center;
+}
+
+h1 {
+  color: #f7f7f7;
+}
