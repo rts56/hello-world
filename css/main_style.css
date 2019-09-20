@@ -7,6 +7,10 @@ Colorblind safe color palette from colorbrewer2.org
 #0571b0 - Blue
 */
 
+/*
+This decleration makes the background color light blue, the main color blue,
+aligns the text to the center of the page and sets the margins to 0
+*/
 body {
   background-color: #92c5de;
   color: #0571b0;
@@ -14,12 +18,22 @@ body {
   margin: 0;
 }
 
+/*
+This decleration sets the heading color to white, sets the space between
+elements (padding) to 5 pixels and sets the margins to 0
+*/
 h1 {
   color: #f7f7f7;
   padding: 5px;
   margin: 0;
 }
 
+/*
+This decleration refers to everthing in the main body of the page. It sets the
+background color to white, maximum width to 1000 pixels, automatically sets
+the margins, sets the height to 100vh, a 2 pixel solid white border, a 25
+pixel border radius and hidden overflow
+*/
 #body-container {
   background-color: #f7f7f7;
   max-width: 1000px;
@@ -30,19 +44,34 @@ h1 {
   overflow: hidden;
 }
 
+/*
+This decleration sets the background color of the header to Blue.
+*/
 #header {
   background-color: #0571b0
 }
 
+/*
+This decleration sets the profile picture on the page to float on the left side
+of the page
+*/
 #profile-picture {
   float: left;
 }
 
+/*
+This decleration refers to the welcome text ("Welcome to my webpage..."),
+setting the padding to 25 pixels and the font size to 25.
+*/
 #welcome-text {
   padding-top: 25px;
   font-size: 25px;
 }
 
+/*
+This decleration sets the properties of the "research interests" list to align
+left, have a font size of 25, have a relative position to the left at 50 pixels
+*/
 #research-interests {
   text-align: left;
   font-size: 25px;
