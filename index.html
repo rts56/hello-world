@@ -9,13 +9,13 @@
 <body>
   <div id="body-container">
     <div id="header">
-      <h1>Hello, Welcome <script src="javascript/external.js"></script>!</h1>
+      <h1>Hello, Welcome to my webpage, <script src="javascript/external.js"></script>!</h1>
     </div>
     <div id="profile-picture">
       <img src="images/Profile_Picture.jpg" width="500px" height="500px"/>
     </div>
     <div id="welcome-text">
-      Welcome to my webpage.<br>
+      My name is Robbie Starke<br>
      I am a student in the
     <a href="https://www.geo.txstate.edu/">Geography Department</a> at
     <a href="https://txstate.edu/">Texas State University</a>.
@@ -28,6 +28,16 @@
         <li>Spending time with family</li>
       </ul>
     </div>
+  <div id="copyright">
+    <script>
+    //This command defines a new variable which finds todays date.
+    var today = new Date();
+    //This command defines a new variable which selects the year from todays date
+    var year = today.getFullYear();
+    //This command writes a line that states "Copyright (current year)"
+    document.writeln("Copyright &copy;" + year);
+    </script>
   </div>
+</div>
 </body>
 </html>

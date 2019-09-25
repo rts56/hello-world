@@ -14,7 +14,6 @@ document.write(user_name);
 //document.writeln(x + y);
 //document.writeln("<br>");
 //document.writeln(x += 33);
-
 /*document.writeln("<button onclick='condition()'>Conditional Test</button>")
 function condition()
 {
