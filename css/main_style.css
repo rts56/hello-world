@@ -79,6 +79,12 @@ left, have a font size of 25, have a relative position to the left at 50 pixels
   left: 50px;
 }
 
+#webmap-reviews {
+  text-align: left;
+  font-size: 25px;
+  position: relative;
+}
+
 #copyright {
   position: absolute;
   width: 1000px;

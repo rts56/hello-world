@@ -5,14 +5,15 @@
   <!--ALL styling for this HTML document are contained in this external css
   file -->
   <link rel="stylesheet" type="text/css" href="css/main_style.css">
+  <script src="javascript/external.js"></script>
 </head>
 <body>
   <div id="body-container">
     <div id="header">
-      <h1>Hello, Welcome to my webpage, <script src="javascript/external.js"></script>!</h1>
+      <h1><script> document.write(welcome()); </script> !</h1>
     </div>
     <div id="profile-picture">
-      <img src="images/Profile_Picture.jpg" width="500px" height="500px"/>
+      <img src="images/Profile_Picture.jpg" width="250px" height="250px"/>
     </div>
     <div id="welcome-text">
       My name is Robbie Starke<br>
@@ -28,6 +29,12 @@
         <li>Spending time with family</li>
       </ul>
     </div>
+  <div id="webmap-reviews">
+    <h3>Webmap Reviews</h3>
+    <script>
+    webmap_table()
+    </script>
+  </div>
   <div id="copyright">
     <script>
     //This command defines a new variable which finds todays date.
