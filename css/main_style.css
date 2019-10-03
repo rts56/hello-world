@@ -38,7 +38,7 @@ pixel border radius and hidden overflow
   background-color: #f7f7f7;
   max-width: 1000px;
   margin: auto;
-  height: 100vh;
+  height: 105vh;
   border: 2px solid #f7f7f7;
   border-radius: 25px;
   overflow: hidden;
@@ -89,5 +89,5 @@ left, have a font size of 25, have a relative position to the left at 50 pixels
   position: absolute;
   width: 1000px;
   text-align: center;
-  bottom: 20px;
+  bottom: -25px;
 }
