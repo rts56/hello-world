@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <!-- setting basic scale of the webpage -->
   <meta charset="utf-8">
   <meta name = "viewport" content = "initial-scale=1, maximum-scale=1, user-scalable=no">
+  <!-- adding title -->
   <title>Simple Mapping</title>
+  <!-- setting the parmeters of the map to fit the whole page -->
   <style>
     html, body, #viewDiv {
       padding: 0;
@@ -12,8 +15,10 @@
       width: 100%;
     }
   </style>
+  <!-- Adding the reference link to the map we are adding to the webpage -->
   <link rel="stylesheet" href="https://js.arcgis.com/4.13/esri/css/main.css">
   <script src="https://js.arcgis.com/4.13/"></script>
+  <!-- These lines define the zoom incraments of the map and the center point -->
   <script>
     require([
     "esri/Map",
@@ -32,6 +37,7 @@
     });
     </script>
     </head>
+    <!-- Added a div element to the page -->
     <body>
     <div id="viewDiv"></div>
     </body>
