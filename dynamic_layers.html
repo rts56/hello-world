@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name = "viewport" content = "initial-scale=1, maximum-scale=1, user-scalable=no">
   <!-- adding title -->
-  <title>Tile Layers</title>
+  <title>Dynamic Layers</title>
   <!-- setting the parmeters of the map to fit the whole page -->
   <style>
     html, body, #viewDiv {
@@ -23,7 +23,8 @@
     require([
     "esri/Map",
     "esri/views/MapView",
-    "esri/layers/TileLayer"
+    "esri/layers/TileLayer",
+    "esri/layers/MapImageLayer"
     ],
     function(Map, MapView){
       var map = new Map({
@@ -42,6 +43,34 @@
       });
       var TransportationLayer = new TileLayer({
         url:"https://server.arcgisonline.com/ArcGIS/rest/services/Reference/World_Transportation/MapServer"
+      });
+      //Added layer to map
+      var layer2 = new MapImageLayer({
+        url: "https://sampleserver6.arcgisonline.com/arcgis/rest/services/Census/MapServer"
+      });
+      var CitiesRenderer = {
+        type: "simple", // Autocasts as new SimpleRenderer()
+        symbol: {
+          type: "simple-maker", // Austocasts as new SimpleMarkerSymbol()
+          size: 3,
+          color: "yellow",
+          style: "circle",
+          outline: {
+            width: 1,
+            color: "yellow"
+          }
+        },
+        label: "Cities"
+      };
+      var CitiesLayer = new MapImageLayer({
+        url: "https://sampleserver6.arcgisonline.com/arcgis/rest/services/USA/MapServer",
+        sublayers: [
+          {
+            id: 0,
+            renderer: CitiesRenderer,
+            opacity: 0.4
+          }
+        ]
       });
     });
     </script>
