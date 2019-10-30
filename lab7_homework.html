@@ -85,15 +85,8 @@
       var popupTemplate = {
         title: "{City}",
         fieldInfos: [{
-          fieldName: "Population",
-          label: "Population",
-          format: {
-            places: 0,
-            digitSeperator: true
-          }
-        }, {
-          fieldName: "Household",
-          label: "Household",
+          fieldName: "UFO Sightings",
+          label: "UFO Sightings",
           format: {
             places: 0,
             digitSeperator: true
@@ -171,20 +164,34 @@
     <div id="viewDiv"></div>
       <div class="esri-widget" id="optionsDiv">
         <h2>UFO Sightings</h2>
-        <select class="esri-widget" id="attSelect">
-          <option value="Population">Population</option>
-          <option value="Household" selected>Households</option>
-        </select>
+        <b>UFO Sightings</b>
+        between
         <select class="esri-widget" id="signSelect">
-          <option value=">">is greater than</option>
-          <option value="<">is less than</option>
+          <option value=">">1906</option>
+          <option value="<">1926</option>
+          <option value="<">1936</option>
+          <option value="<">1946</option>
+          <option value="<">1956</option>
+          <option value="<">1966</option>
+          <option value="<">1976</option>
+          <option value="<">1986</option>
+          <option value="<">1996</option>
+          <option value="<">2006</option>
+          <option value="<">2016</option>
         </select>
+        and
         <select class="esri-widget" id="valSelect">
-          <option value="10000">10,000</option>
-          <option value="50000">50,000</option>
-          <option value="100000">100,000</option>
-          <option value="150000">150,000</option>
-          <option value="200000">200,000</option>
+          <option value=">">1906</option>
+          <option value="<">1926</option>
+          <option value="<">1936</option>
+          <option value="<">1946</option>
+          <option value="<">1956</option>
+          <option value="<">1966</option>
+          <option value="<">1976</option>
+          <option value="<">1986</option>
+          <option value="<">1996</option>
+          <option value="<">2006</option>
+          <option value="<">2016</option>
         </select>
         <br>
         <br>
