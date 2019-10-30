@@ -81,7 +81,7 @@
           }
         ]
       });
-      var popUrl = "https://services.arcgis.com/V6ZHFr6zdgNZuVG0/ArcGIS/rest/services/CaliforniaCities/FeatureServer/0";
+      var popUrl = "https://services.arcgis.com/V6ZHFr6zdgNZuVG0/ArcGIS/rest/services/UFO_Sightings/FeatureServer";
       var popupTemplate = {
         title: "{City}",
         fieldInfos: [{
@@ -93,8 +93,7 @@
           }
         }],
         content:
-          "<b>Population:" + "</b> {population}" +
-          "<br><b>Households:</b> {Household}" +
+          "<b>UFO Sightings:" + "</b> {UFO Sightings}" +
           "<br><b>Latitude:</b> {Latitude}" +
           "<br><b>Longitude:</b> {Longitude}"
       };
