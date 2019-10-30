@@ -25,6 +25,7 @@
     "esri/views/MapView",
     "esri/layers/TileLayer",
     "esri/layers/MapImageLayer",
+    "esri/layers/FeatureLayer",
     "esri/widgets/BasemapGallery",
     "esri/layers/GraphicsLayer",
     "esri/tasks/QueryTask",
@@ -36,7 +37,7 @@
     ],
     function(Map, MapView, TileLayer, MapImageLayer, BasemapGallery, GraphicsLayer, QueryTask, Query, arrayUtils, dom, on){
       var map = new Map({
-        basemap: "oceans",
+        basemap: "osm",
         layers: "TransportationLayer"
       });
       var view = new MapView({
